@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NewsAppGlass3</string>
+    <string name="voice_trigger">Start news app</string>
+    <string name="loading_news">Loading news...</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_news_slider">NewsSliderActivity</string>
+
+    <!-- live ticker functionality -->
+    <string name="home_team">Denmark</string>
+    <string name="away_team">Germany</string>
+    <string name="time">00:00</string>
+    <string name="game_quarter">First half</string>
+    <string name="title_activity_event_scroll">EventScrollActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tournament_scroller">TournamentScrollerActivity</string>
+    <string name="title_activity_match_scroller">MatchScrollerActivity</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_read_card">ReadCardActivity</string>
+   
+
+</resources>

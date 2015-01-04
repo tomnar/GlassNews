@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <TextView
+     android:id="@+id/tournamentNameTextView"
+     android:layout_width="639px"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:gravity="center"
+     android:textSize="40px" />
+ <TextView
+     android:id="@+id/homeTeamNameTextView"
+     android:layout_width="249px"
+     android:layout_height="90px"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/tournamentNameTextView"
+     android:gravity="center"
+     android:textSize="40px" />
+
+ <TextView
+     android:id="@+id/awayTeamNameTextView"
+     android:layout_width="249px"
+     android:layout_height="90px"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/tournamentNameTextView"
+     android:gravity="center"
+     android:textSize="40px" />
+ 
+
+ <TextView
+     android:id="@+id/awayScoreTextView"
+     android:layout_width="249px"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/awayTeamNameTextView"
+     android:layout_below="@+id/awayTeamNameTextView"
+     android:gravity="center"
+     android:textSize="70px" />
+
+ <TextView
+     android:id="@+id/homeScoreTextView"
+     android:layout_width="249px"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/awayScoreTextView"
+     android:layout_alignBottom="@+id/awayScoreTextView"
+     android:layout_alignRight="@+id/homeTeamNameTextView"
+     android:gravity="center"
+     android:textSize="70px" />
+ 
+
+ <TextView
+     android:id="@+id/halfTextView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:layout_marginBottom="33px"
+     android:gravity="center"
+     android:textSize="26px" />
+ 
+ </RelativeLayout>

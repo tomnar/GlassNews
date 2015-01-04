@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/left_column"
+        android:layout_width="@dimen/glass_card_left_column_width"
+        android:layout_height="match_parent"
+        >
+        <ImageView 
+            android:id="@+id/event_image"
+            android:contentDescription="none"
+            android:layout_alignParentLeft="true"
+             android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            />
+    </RelativeLayout>
+
+  <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/glass_card_body_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/glass_card_two_column_margin"
+        android:layout_marginRight="@dimen/glass_card_margin"
+        android:layout_marginTop="@dimen/glass_card_margin"
+        android:layout_toRightOf="@+id/left_column"
+        tools:ignore="UselessLeaf"
+        >
+        <LinearLayout 
+           android:id="@+id/player_linear"
+           android:layout_alignParentTop="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">	
+	        <TextView
+	           android:id="@+id/player_textview"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	          	>
+	        </TextView>
+	        <LinearLayout 
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	           	 android:layout_height="wrap_content">
+		        <TextView
+		           android:id="@+id/team_textview"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text=""
+		           android:textSize="26px"
+		           android:textColor="@color/gray"
+		            ></TextView>
+		            <TextView
+		           android:id="@+id/time_textview"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_marginLeft="20px"
+		           android:text=""
+		           android:textSize="26px"
+		           android:textColor="@color/gray"
+		            ></TextView>
+		    </LinearLayout>
+        </LinearLayout>
+      
+       <RelativeLayout 
+           android:id="@+id/score_relative"
+           android:layout_alignParentBottom="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+	        <TextView
+	           android:id="@+id/hometeam_textview"
+	           android:layout_width="160px"
+	           android:layout_height="60px"
+	           android:layout_alignParentRight="true"
+	           android:gravity="right"
+	           android:text=""
+	           android:textSize="26px"
+	            ></TextView>
+	        <TextView
+	           android:id="@+id/awayteam_textview"
+	           android:layout_width="160px"
+	           android:layout_height="60px"
+	           android:layout_alignParentLeft="true"
+	           android:gravity="left"
+	           android:text=""
+	           android:textSize="26px"
+	            ></TextView>
+	        <TextView
+		     android:id="@+id/homescore_textview"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignBaseline="@+id/awayscore_textview"
+		     android:layout_alignBottom="@+id/awayscore_textview"
+		     android:layout_alignRight="@+id/hometeam_textview"
+		     android:gravity="center" />
+	        <TextView
+		     android:id="@+id/awayscore_textview"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignLeft="@+id/awayteam_textview"
+		     android:layout_below="@+id/awayteam_textview"
+		     android:gravity="center" />
+	   
+        </RelativeLayout>
+        <!-- Put widgets for the right column inside this RelativeLayout. -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/glass_card_footer_margin"
+        android:layout_marginLeft="@dimen/glass_card_two_column_margin"
+        android:layout_marginRight="@dimen/glass_card_margin"
+        android:layout_toRightOf="@+id/left_column"
+        android:orientation="horizontal"
+        >
+
+        <!--
+             The footer view will grow to fit as much content as possible while the
+             timestamp view keeps a fixed width. If the footer text is too long, it
+             will be ellipsized with a 40px margin between it and the timestamp.
+        -->
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/glass_card_margin"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

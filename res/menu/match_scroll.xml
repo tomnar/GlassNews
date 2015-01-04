@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newsappglass2.MatchScrollerActivity" >
+
+     <item
+        android:id="@+id/follow_match"
+        android:title="Follow Match">        
+     </item>
+     <item
+        android:id="@+id/unfollow_match"
+        android:title="Unfollow Match">        
+     </item>
+     <item
+        android:id="@+id/match_events"
+        android:title="Match Events">        
+     </item>
+   
+
+</menu>

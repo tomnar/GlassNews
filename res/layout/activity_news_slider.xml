@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/slider"
+    android:orientation="vertical">
+     
+    <RelativeLayout
+       android:id="@+id/card_holder"
+       android:layout_width="match_parent" 
+       android:layout_height="300px"
+       android:layout_alignParentTop="true"  >
+       
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/footnote"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:textStyle="bold"
+        android:textSize="30px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="70px">
+    </TextView>
+ 
+
+</RelativeLayout>

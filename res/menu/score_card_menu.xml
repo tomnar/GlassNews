@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/matchscroll_item"
+        android:title="Matches"  /> 
+    <item
+        android:id="@+id/stop_item"
+        android:title="Remove liveticker"  /> 
+        
+    <item
+        android:id="@+id/close_event_item"
+        android:title="Remove event"  /> 
+        
+</menu>

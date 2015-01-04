@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Use the constants defined in the ContextualMenus.Command enum-->
+      <item
+        android:id="@+id/read_aloud_item"
+        android:title="Read aloud">        
+     </item>
+     <item
+        android:id="@+id/read_aloud_stop_item"
+        android:title="Stop read aloud">        
+     </item>
+     <item
+        android:id="@+id/readtext_item"
+        android:title="Show article">        
+     </item>
+     <item
+        android:id="@+id/read_on_phone_item"
+        android:title="Open on phone">        
+     </item>
+      <item
+        android:id="@+id/bookmark_item"
+        android:title="Bookmark to phone">        
+     </item>
+     <item
+        android:id="@+id/delete_bookmark_item"
+        android:title="Delete bookmark">        
+     </item>
+     <item
+        android:id="@+id/related_item"
+        android:title="Related">        
+     </item>
+     <item
+        android:id="@+id/radio_start_item"
+        android:title="Play all">        
+     </item>
+     <item
+        android:id="@+id/radio_stop_item"
+        android:title="Stop play all">        
+     </item>
+      <item
+        android:id="@+id/follow_league_item"
+        android:title="Follow live">        
+     </item>
+     <item
+        android:id="@+id/unfollow_league_item"
+        android:title="Unfollow live">        
+     </item>
+     <item
+        android:id="@+id/yes_item"
+        android:title="Yes">        
+     </item>
+     <item
+        android:id="@+id/no_item"
+        android:title="No">        
+     </item>
+   
+ 
+</menu>

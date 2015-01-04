@@ -1,0 +1,10 @@
+VoicHackActivity implementerer VoiceDetectionListener. Klassen opretter og starter VoiceMenuEss, og giver sig selv med som listener til VoiceMenuEss.
+VoiceMenuEss implementerer også VoiceDetection Listener. Klassen opretter VoiceDetection og giver sig selv med som listener. 
+VoiceDetection nedarver fra StubVoiceListener, som nedarver fra apk'ens egen SimpleVoiceListener. 
+VoiceDetection giver sig selv med til GlassVoiceApk frameworket igennem VoiceInputHelper. Når en voicecommand registeres af frameworket, bliver
+onVoiceCommand kaldt på VoiceDetection af frameworket. Metoden onVoiceCommand er nedarvet fra SimpleVoiceListener - deraf en hook fra egen kode til
+frameworket. 
+VoiceConfig (hørende til apk'en) gives en liste af phrases i et string array. Det er disse som apk'en udf'rer et nearest match på. 
+VoiceConfig gives til VoiceInputHelper.setVoiceConfig(), når voice detection startes, og voice detection stoppes igen, ved at kalde VoiceInputHelper.setVoiceConfig(null). 
+
+ 

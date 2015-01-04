@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newsappglass3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+         <service
+            android:name=".ScoreCard"
+            android:enabled="true"
+            android:label="@string/app_name" >
+
+            
+          <!--  <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />-->
+            
+        </service>
+
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+            -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+              <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+        <activity
+            android:name=".NewsSliderActivity"
+            android:label="@string/title_activity_news_slider" >
+        </activity>
+        <activity
+            android:name=".ReadCardActivity"
+            android:label="@string/title_activity_read_card" >
+        </activity>
+        <activity
+            android:name=".EventScrollActivity"
+            android:label="@string/title_activity_event_scroll" >
+        </activity>
+        <activity
+            android:name=".TournamentScrollActivity"
+            android:label="@string/title_activity_tournament_scroller" >
+        </activity>
+        <activity
+            android:name=".MatchScrollActivity"
+            android:label="@string/title_activity_match_scroller" >
+        </activity>
+        <activity
+            android:name=".MatchScrollLiveCardActivity"
+            android:label="@string/title_activity_match_scroller" >
+        </activity>
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/title_activity_event" >
+        </activity>
+    </application>
+
+</manifest>

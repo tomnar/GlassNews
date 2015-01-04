@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     
+    <TextView
+	     android:id="@+id/pollQuestionTextView"
+	     android:layout_width="640px"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentTop="true"
+	     android:layout_marginBottom="20px"
+	     android:gravity="center"
+	     android:textSize="40px" />
+    
+    
+       <RelativeLayout
+           android:id="@+id/pollAnswer1BarRelative"
+           android:layout_width="640px"
+       		android:layout_height="275px"
+       		android:layout_below="@id/pollQuestionTextView"
+       		 android:gravity="center_horizontal"
+       		>
+	       	<LinearLayout
+	       	    android:id="@+id/pollAnswer1Linear"
+	       	    android:orientation="vertical"
+	       	    android:layout_width="150px"
+       			android:layout_height="wrap_content"
+       			android:gravity="center_horizontal"
+       			android:layout_marginRight="60px" 
+       			android:layout_alignParentBottom="true">
+       			<TextView
+			        android:id="@+id/pollAnswer1Votes"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:textSize="30px"  
+			        android:layout_gravity="center_horizontal"
+			        android:text="0" >
+			        </TextView>
+		        <ImageView
+			        android:id="@+id/pollAnswer1Bar"
+			     	android:layout_height="0px"
+			        android:layout_width="50px"
+			        android:background="#FFFFFF" >
+		   		</ImageView>
+		   		   <!--  android:layout_height="130px"-->
+		   		<TextView
+			        android:id="@+id/pollAnswer1Desc"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:layout_gravity="center_horizontal" 
+			        android:textSize="30px"
+			        android:text="yes" >
+		   		</TextView>
+	   		</LinearLayout>
+   			<LinearLayout 
+   			    android:id="@+id/pollAnswer2Linear"
+   			    android:orientation="vertical"
+   			    android:layout_width="150px"
+       			android:layout_height="wrap_content"
+       			android:gravity="center_horizontal"
+       			android:layout_toRightOf="@id/pollAnswer1Linear"
+       			android:layout_alignParentBottom="true" >
+		   		<TextView
+			        android:id="@+id/pollAnswer2Votes"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:layout_gravity="center_horizontal"
+			        android:textSize="30px"  
+			        android:text="0" >
+			        </TextView>
+		   		<ImageView
+			        android:id="@+id/pollAnswer2Bar"
+			        android:layout_width="50px"
+			        android:layout_height="0px"
+			        android:background="#FFFFFF"
+			        >
+			         <!--   android:layout_height="180px"-->
+		   		</ImageView>
+		   		<TextView
+			        android:id="@+id/pollAnswer2Desc"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:layout_gravity="center_horizontal"
+			        android:textSize="30px"  
+			        android:text="no" >
+			        </TextView>
+	        </LinearLayout>
+       </RelativeLayout>
+	   <!--  <RelativeLayout
+	        android:id="@+id/pollAnswer2BarRelative"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/pollAnswer1BarRelative"
+        	>
+             <TextView
+		        android:id="@+id/pollAnswer2Bar"
+		        android:layout_height="330px"
+		        android:layout_width="30px"
+		        android:layout_marginBottom="5px"  
+		        android:background="#FFFFFF">
+    		</TextView>
+    		<TextView
+		        android:id="@+id/pollAnswer2Desc"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"  
+		        android:layout_below="@id/pollAnswer2Bar" 
+		        android:layout_alignBottom="@id/pollAnswer1Desc" 
+		        android:text="no" >
+    		</TextView>
+        </RelativeLayout>-->
+   
+    
+    
+    
+ 
+ </RelativeLayout>
